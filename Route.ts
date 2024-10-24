@@ -2,7 +2,7 @@ import { RouteHandler, Routes } from "@/types/index";
 
 export class Route {
   public basePath: string;
-  private routes: Routes;
+  public routes: Routes;
 
   public constructor(basePath: string) {
     this.basePath = basePath;

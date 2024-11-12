@@ -1,6 +1,6 @@
 import http from "node:http";
 import { Route } from "./Route";
-import { Routes } from "@/types/index";
+import { Routes } from "@/types";
 
 export class Application extends Route {
   private server = http.createServer;

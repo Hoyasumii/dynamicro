@@ -1,10 +1,12 @@
 export interface RouteHandler<
   Body = unknown,
   Params = unknown,
-  Query = unknown
+  Query = unknown,
+  Service = unknown
 > {
   body: Body;
   params: Params;
   query: Query;
-  setStatus(value: number): void;
+  service: Service;
+  set(value: number | string | boolean): void;
 }
